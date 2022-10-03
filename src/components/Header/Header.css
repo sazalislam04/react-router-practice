@@ -1,0 +1,19 @@
+.header a {
+  padding: 10px;
+  font-size: 20px;
+  color: black;
+  text-decoration: none;
+  margin-top: 20px;
+}
+.active {
+  position: relative;
+}
+.active::before {
+  content: "";
+  position: absolute;
+  width: 80%;
+  height: 2px;
+  background: blue;
+  top: 80%;
+  transition: 0.4s;
+}
